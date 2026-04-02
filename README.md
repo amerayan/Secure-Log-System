@@ -1,31 +1,22 @@
-# Secure-Log-System
-A secure log system ensures “logs cannot be secretly changed, deleted, or accessed by unauthorized people.”
-**Objectives**
-Capture system and user activity logs
-Prevent unauthorized modification or deletion of logs
-Ensure secure storage and transmission of logs
-Detect tampering attempts
-Provide audit trails for security analysis
+# Tamper-Evident Logging System
 
-**SYSTEM ARCHITECTURE**
-*User/System Activity
-        ↓
-   Log Generator
-        ↓
- Secure Log Storage (Encrypted)
-        ↓
- Integrity Checker (Hashing)
-        ↓
- Monitoring & Alerts**
+## Overview
+This project implements a secure logging system where logs cannot be modified without detection using hash chaining.
 
-**PEOJECT STRUCTURE**.
-secure-log-system/
-│── logs/
-│── src/
-│   ├── logger.py
-│   ├── encrypt.py
-│   ├── integrity.py
-│   ├── auth.py
-│── database/
-│── README.md
-│── requirements.txt
+## Features
+- Secure log chaining using SHA-256
+- Tamper detection
+- Integrity verification
+
+## How to Run
+1. Install Python
+2. Run:
+   python main.py
+
+## Output
+- Displays logs
+- Verifies integrity
+- Detects tampering
+
+## Author
+[Your Name]
